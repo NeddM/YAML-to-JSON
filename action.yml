@@ -19,6 +19,7 @@ runs:
 
     - name: Install yq tool
       shell: bash
+      continue-on-error: true
       run: |
         if ! command -v yq &> /dev/null; then
             echo "yq is not installed. Installing..."
